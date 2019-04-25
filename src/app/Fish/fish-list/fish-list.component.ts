@@ -11,6 +11,8 @@ export class FishListComponent implements OnInit {
 
   fish: Fish[];
 
+  Header = "Fishing Records";
+
   constructor(private fishsvc: FishService) { }
 
   ngOnInit() {

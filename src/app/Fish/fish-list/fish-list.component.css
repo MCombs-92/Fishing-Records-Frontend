@@ -1,0 +1,10 @@
+#Header p {
+    text-align: center;
+    font-size: 42pt;
+    color: black;
+    font-weight: bold;
+}
+
+#data th {
+    font-size: 14pt;
+}
