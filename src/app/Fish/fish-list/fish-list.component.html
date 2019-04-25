@@ -1,19 +1,25 @@
-<div id = "Header">
-  <p>{{ Header }}</p>
-</div>
-
-
-<div id = "data">
-  <table class = "table table-striped">
-    <tr>
-      <th>Species</th>
-      <th>Weight</th>
-      <th>Bait</th>
-    </tr>
-    <tr *ngFor="let f of fish">
-      <td>{{ f.Species }}</td>
-      <td>{{ f.Weight }}</td>
-      <td>{{ f.Bait }}</td>
-    </tr>
-  </table>
+<div id = "container">
+    <div id = "Header">
+        <h2>{{ Header }}</h2>
+        <p>Here's an overwiew of all your recorded fish!</p>
+      </div>
+      
+      <div id = "create">
+        <span><a routerLink="/fish/create">Record New Catch</a></span>
+      </div>
+      
+      <div id = "data">
+        <table class = "table table-striped">
+          <tr>
+            <th>Species</th>
+            <th>Weight</th>
+            <th>Bait</th>
+          </tr>
+          <tr *ngFor="let f of fish">
+            <td>{{ f.Species }}</td>
+            <td>{{ f.Weight }}</td>
+            <td>{{ f.Bait }}</td>
+          </tr>
+        </table>
+      </div>
 </div>

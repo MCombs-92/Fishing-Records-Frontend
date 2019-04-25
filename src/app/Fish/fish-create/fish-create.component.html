@@ -1,3 +1,36 @@
-<p>
-  fish-create works!
-</p>
+<div id = "container">
+    <div id = "content">
+
+        <div id = "head">
+          <h2>Catch Data</h2>
+          <p>Enter your catch data here, weight can be left blank if you didn't record it!</p>
+        </div>
+      
+          <div class="input-group input-group-sm mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="Species">Species</label>
+              </div>
+              <input [(ngModel)]="fish.Species" name="Species" type="text" class="form-control" id="Species">
+          </div>
+      
+          <div class="input-group input-group-sm mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="Weight">Weight</label>
+              </div>
+              <input [(ngModel)]="fish.Weight" name="Weight" type="text" class="form-control" id="Weight">
+          </div>
+      
+          <div class="input-group input-group-sm mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="Bait">Bait</label>
+              </div>
+              <input [(ngModel)]="fish.Bait" name="Bait" type="text" class="form-control" id="Bait">
+          </div>
+      
+          <div id="function">
+              <button (click)="create()" class="btn btn-primary">Record Catch</button>
+          </div>
+      
+      </div>
+</div>
+

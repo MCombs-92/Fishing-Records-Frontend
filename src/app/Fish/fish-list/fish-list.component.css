@@ -1,8 +1,15 @@
-#Header p {
+#Header {
     text-align: center;
+    padding-top: 10vh;
+}
+
+#Header h2 {
     font-size: 42pt;
-    color: black;
     font-weight: bold;
+}
+
+#create {
+    margin-left: 0.5vw;
 }
 
 #data th {

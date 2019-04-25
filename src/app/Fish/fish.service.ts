@@ -15,19 +15,19 @@ export class FishService {
   }
 
   get(id: number): Observable<Fish> {
-    return this.http.get(this.url+"get/"+id) as Observable<Fish>
+    return this.http.get(this.url+"Get/"+id) as Observable<Fish>
   }
 
   create(fish: Fish): Observable<Fish> {
-    return this.http.post(this.url+"create", fish) as Observable<Fish>
+    return this.http.post(this.url+"Create", fish) as Observable<Fish>
   }
 
   change(fish: Fish): Observable<Fish> {
-    return this.http.post(this.url+"change", fish) as Observable<Fish>
+    return this.http.post(this.url+"Change", fish) as Observable<Fish>
   }
 
   remove(fish: Fish): Observable<Fish> {
-    return this.http.post(this.url+"remove", fish) as Observable<Fish>
+    return this.http.post(this.url+"Remove", fish) as Observable<Fish>
   }
 
 
