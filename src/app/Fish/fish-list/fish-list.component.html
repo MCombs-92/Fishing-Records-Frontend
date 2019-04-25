@@ -14,11 +14,15 @@
             <th>Species</th>
             <th>Weight</th>
             <th>Bait</th>
+            <th>Actions</th>
           </tr>
           <tr *ngFor="let f of fish">
             <td>{{ f.Species }}</td>
             <td>{{ f.Weight }}</td>
             <td>{{ f.Bait }}</td>
+            <td>
+              <span><a routerLink="/fish/edit/{{f.Id}}">Edit Record</a></span>
+            </td>
           </tr>
         </table>
       </div>

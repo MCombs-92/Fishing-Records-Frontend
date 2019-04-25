@@ -1,3 +1,31 @@
-<p>
-  fish-edit works!
-</p>
+<div id = "container">
+    <div id = "content">
+      
+          <div class="input-group input-group-sm mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="Species">Species</label>
+              </div>
+              <input [(ngModel)]="fish.Species" name="Species" type="text" class="form-control" id="Species">
+          </div>
+      
+          <div class="input-group input-group-sm mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="Weight">Weight</label>
+              </div>
+              <input [(ngModel)]="fish.Weight" name="Weight" type="text" class="form-control" id="Weight">
+          </div>
+      
+          <div class="input-group input-group-sm mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="Bait">Bait</label>
+              </div>
+              <input [(ngModel)]="fish.Bait" name="Bait" type="text" class="form-control" id="Bait">
+          </div>
+      
+          <div id="function">
+              <button (click)="change()" class="btn btn-primary">Edit Catch Details</button>
+          </div>
+      
+      </div>
+</div>
+
