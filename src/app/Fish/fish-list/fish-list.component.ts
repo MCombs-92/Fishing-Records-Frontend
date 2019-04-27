@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 import { Fish } from '../fish';
 import { FishService } from '../fish.service';
+import { FishDetailComponent } from '../fish-detail/fish-detail.component'
 
 @Component({
   selector: 'app-fish-list',
@@ -10,10 +12,25 @@ import { FishService } from '../fish.service';
 export class FishListComponent implements OnInit {
 
   fish: Fish[];
+  f: Fish;
 
   Header = "Fishing Records";
 
-  constructor(private fishsvc: FishService) { }
+  Removed: boolean = false;
+
+  // Remove(): void {
+  //   this.fishsvc.remove(this.detail.fish).subscribe(resp => {
+  //     console.log("Removed record", this.detail.fish);
+  //     this.router.navigateByUrl("/fish/list");
+  //   })
+  // }
+
+  constructor(
+    private fishsvc: FishService,
+    private router: Router,
+    private route: ActivatedRoute,
+    // private detail: FishDetailComponent
+    ) { }
 
   ngOnInit() {
 
