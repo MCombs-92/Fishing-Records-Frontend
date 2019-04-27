@@ -22,8 +22,6 @@ export class FishListComponent implements OnInit {
 
   Header = "Fishing Records";
 
-  Removed: boolean = false;
-
   // Remove(): void {
   //   this.fishsvc.remove(this.detail.fish).subscribe(resp => {
   //     console.log("Removed record", this.detail.fish);
