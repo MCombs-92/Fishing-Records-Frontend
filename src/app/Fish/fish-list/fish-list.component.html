@@ -17,14 +17,15 @@
             <th>Actions</th>
           </tr>
           <tr *ngFor="let f of fish">
-            <td>{{ f.SubSpecies }}</td>
+            <td >{{ f.SubSpecies }}</td>
             <td>{{ f.Weight }}</td>
             <td>{{ f.BaitDesc }}</td>
             <td>
               <span class = "edit"><a routerLink="/fish/edit/{{f.Id}}">Edit Record |</a></span>
               <span *ngIf="!Removed"class = "confirm"><a (click) = "Markforremoval()"> Remove Record</a></span>
               <span *ngIf="Removed" class = "confirm"><a (click) = "Markforremoval()"> Cancel</a></span>
-              <span class = "confirm" *ngIf="Removed"><a routerLink = "/fish/detail/{{f.Id}}"> | Click to confirm</a></span>
+              <span *ngIf="Removed"> | </span>
+              <span class = "confirm" *ngIf="Removed"><a routerLink = "/fish/detail/{{f.Id}}">Click to confirm</a></span>
             </td>
           </tr>
         </table>

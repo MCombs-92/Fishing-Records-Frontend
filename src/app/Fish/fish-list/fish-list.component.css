@@ -12,6 +12,10 @@
     margin-left: 0.5vw;
 }
 
+.spacer {
+    padding-left: 0.5vh;
+}
+
 #data {
     display: inline-block;
     width: 100%;
@@ -20,12 +24,12 @@
 #data th {
     font-size: 14pt;
     width: 10vw;
-    padding: 10px 0px;
+    padding: 10px 0px 10px 0.5vw;
 }
 
 #data td{
     width: 10vw;
-    padding: 10px 0px;
+    padding: 10px 0px 10px 0.5vw;
 }
 
 .edit a {
@@ -37,3 +41,4 @@
     cursor: pointer;
     text-decoration: none;
 }
+

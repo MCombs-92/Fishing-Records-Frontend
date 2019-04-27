@@ -41,9 +41,10 @@
           <input [(ngModel)]="fish.BaitDesc" name="BaitDesc" type="text" class="form-control" id="BaitDesc">
       </div>
       
-          <div id="function">
-              <button (click)="change()" class="btn btn-primary">Update Catch Details</button>
-          </div>
+      <div id="function">
+        <button routerLink="/fish/list" (click)="change()" class="btn btn-info">Previous</button>
+        <button (click)="change()" class="btn btn-success change">Update Catch Details</button>
+      </div>
       
       </div>
 </div>

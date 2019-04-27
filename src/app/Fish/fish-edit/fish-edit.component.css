@@ -27,7 +27,12 @@
 }
 
 #function {
-    width: 50%;
     margin: auto;
     text-align: center;
 }
+
+#function button {
+    width: 33%;
+    margin: 2vh 1vw 0vh 1vw;
+}
+
