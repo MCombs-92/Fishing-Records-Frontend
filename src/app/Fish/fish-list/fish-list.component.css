@@ -12,6 +12,28 @@
     margin-left: 0.5vw;
 }
 
+#data {
+    display: inline-block;
+    width: 100%;
+}
+
 #data th {
     font-size: 14pt;
+    width: 10vw;
+    padding: 10px 0px;
+}
+
+#data td{
+    width: 10vw;
+    padding: 10px 0px;
+}
+
+.edit a {
+    text-decoration: none;
+}
+
+.confirm a {
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
 }

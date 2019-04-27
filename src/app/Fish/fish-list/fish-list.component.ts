@@ -14,6 +14,12 @@ export class FishListComponent implements OnInit {
   fish: Fish[];
   f: Fish;
 
+  Removed: boolean = false;
+  
+  Markforremoval(): void {
+    this.Removed = !this.Removed;
+  }
+
   Header = "Fishing Records";
 
   Removed: boolean = false;
