@@ -1,34 +1,38 @@
 <div id = "container">
-    <div id = "Header">
-        <h2>{{ Header }}</h2>
-        <p>Here's an overwiew of all your recorded fish!</p>
-      </div>
-      
-      <div id = "create">
-        <span><a routerLink="/fish/create">Record New Catch</a></span>
-      </div>
-      
-      <div id = "data">
-        <table class = "table table-striped">
-          <tr>
-            <th>Species</th>
-            <th>Weight</th>
-            <th>Bait</th>
-            <th>Actions</th>
-          </tr>
-          <tr *ngFor="let f of fish">
-            <td >{{ f.SubSpecies }}</td>
-            <td>{{ f.Weight }}</td>
-            <td>{{ f.BaitDesc }}</td>
-            <td>
-              <span class = "edit"><a routerLink="/fish/edit/{{f.Id}}">Edit Record</a></span>
-              <span> | </span>
-              <span *ngIf="!Removed"class = "confirm"><a (click) = "Markforremoval()"> Remove Record</a></span>
-              <span *ngIf="Removed" class = "confirm"><a (click) = "Markforremoval()"> Cancel</a></span>
-              <span *ngIf="Removed"> | </span>
-              <span class = "confirm" *ngIf="Removed"><a routerLink = "/fish/detail/{{f.Id}}">Click to confirm</a></span>
-            </td>
-          </tr>
-        </table>
-      </div>
+  <div id = "Header">
+      <h2>{{ Header }}</h2>
+      <p>Here's an overwiew of all your recorded fish!</p>
+  </div>
+    
+  <div id = "create">
+    <span><a routerLink="/fish/create">Record New Catch</a></span>
+  </div>
+    
+  <div id = "data">
+    <table class = "table table-striped">
+      <tr>
+        <th>Species</th>
+        <th>Weight</th>
+        <th>Bait</th>
+        <th>Actions</th>
+      </tr>
+      <tr *ngFor="let f of fish">
+        <td >{{ f.SubSpecies }}</td>
+        <td>{{ f.Weight }}</td>
+        <td>
+          <span>{{f.BaitStyle}}</span>
+          <span> - </span>
+          <span>{{ f.BaitDesc }}</span>
+        </td>
+        <td>
+          <span class = "edit"><a routerLink="/fish/edit/{{f.Id}}">Edit Record</a></span>
+          <span> | </span>
+          <span *ngIf="!Removed"class = "confirm"><a (click) = "Markforremoval()"> Remove Record</a></span>
+          <span *ngIf="Removed" class = "confirm"><a (click) = "Markforremoval()"> Cancel</a></span>
+          <span *ngIf="Removed"> | </span>
+          <span class = "confirm" *ngIf="Removed"><a routerLink = "/fish/detail/{{f.Id}}">Click to confirm</a></span>
+        </td>
+      </tr>
+    </table>
+  </div>
 </div>

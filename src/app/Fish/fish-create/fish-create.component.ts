@@ -15,6 +15,24 @@ export class FishCreateComponent implements OnInit {
 
   fish: Fish = new Fish;
 
+  species: string[] = [
+    "Catfish",
+    "Bass",
+    "Drum",
+    "Sunfish/Bream",
+    "Carp",
+    "Alligator Gar"
+
+  ];
+
+  baits: string[]= [
+    "Live",
+    "Cut",
+    "Lure",
+    "Synthetic",
+    "Other"
+  ]
+
   create(): void {
     this.fishsvc.create(this.fish).subscribe(resp=> {
       console.log(resp);

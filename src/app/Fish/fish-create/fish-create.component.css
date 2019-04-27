@@ -24,6 +24,11 @@
     background-color: black;
     color: white;
     width: 6vw;
+    height: 4.5vh;
+    text-align: center;
+}
+#content input, #content select {
+    height: 4.5vh;
 }
 
 #function {
