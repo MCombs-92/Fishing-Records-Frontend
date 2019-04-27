@@ -21,7 +21,8 @@
             <td>{{ f.Weight }}</td>
             <td>{{ f.BaitDesc }}</td>
             <td>
-              <span class = "edit"><a routerLink="/fish/edit/{{f.Id}}">Edit Record |</a></span>
+              <span class = "edit"><a routerLink="/fish/edit/{{f.Id}}">Edit Record</a></span>
+              <span> | </span>
               <span *ngIf="!Removed"class = "confirm"><a (click) = "Markforremoval()"> Remove Record</a></span>
               <span *ngIf="Removed" class = "confirm"><a (click) = "Markforremoval()"> Cancel</a></span>
               <span *ngIf="Removed"> | </span>

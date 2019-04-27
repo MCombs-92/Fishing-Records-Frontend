@@ -12,6 +12,11 @@
     margin-left: 0.5vw;
 }
 
+#create a, #create a:hover, .edit a, .edit a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
 .spacer {
     padding-left: 0.5vh;
 }
@@ -30,10 +35,6 @@
 #data td{
     width: 10vw;
     padding: 10px 0px 10px 0.5vw;
-}
-
-.edit a {
-    text-decoration: none;
 }
 
 .confirm a {
