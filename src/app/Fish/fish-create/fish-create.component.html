@@ -12,6 +12,13 @@
               </div>
               <input [(ngModel)]="fish.Species" name="Species" type="text" class="form-control" id="Species">
           </div>
+
+          <div class="input-group input-group-sm mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="SubSpecies">Sub-Species</label>
+              </div>
+              <input [(ngModel)]="fish.SubSpecies" name="SubSpecies" type="text" class="form-control" id="SubSpecies">
+          </div>
       
           <div class="input-group input-group-sm mb-3">
               <div class="input-group-prepend">
@@ -22,9 +29,16 @@
       
           <div class="input-group input-group-sm mb-3">
               <div class="input-group-prepend">
-                <label class="input-group-text" for="Bait">Bait</label>
+                <label class="input-group-text" for="BaitStyle">Bait Style</label>
               </div>
-              <input [(ngModel)]="fish.Bait" name="Bait" type="text" class="form-control" id="Bait">
+              <input [(ngModel)]="fish.BaitStyle" name="BaitStyle" type="text" class="form-control" id="BaitStyle">
+          </div>
+
+          <div class="input-group input-group-sm mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="BaitDesc">Bait Description</label>
+              </div>
+              <input [(ngModel)]="fish.BaitDesc" name="BaitDesc" type="text" class="form-control" id="BaitDesc">
           </div>
       
           <div id="function">

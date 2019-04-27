@@ -1,8 +1,10 @@
 export class Fish {
     Id: number;
-    Species: string;
+    SubSpecies: string;
+    TrueSpecies: string;
     Weight: number;
-    Bait: string;
+    BaitStyle: string;
+    BaitDesc: string;
 
     constructor() {
         this.Id = 0;

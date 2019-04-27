@@ -1,31 +1,48 @@
 <div id = "container">
     <div id = "content">
 
-      <h1>Record details</h1>
+      <div id = "head">
+          <h1>Record details</h1>
+          <p>Your record details can be adjusted here</p>
+      </div>
       
-          <div class="input-group input-group-sm mb-3">
-              <div class="input-group-prepend">
-                <label class="input-group-text" for="Species">Species</label>
-              </div>
-              <input [(ngModel)]="fish.Species" name="Species" type="text" class="form-control" id="Species">
+      <div class="input-group input-group-sm mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="Species">Species</label>
           </div>
-      
-          <div class="input-group input-group-sm mb-3">
-              <div class="input-group-prepend">
-                <label class="input-group-text" for="Weight">Weight</label>
-              </div>
-              <input [(ngModel)]="fish.Weight" name="Weight" type="text" class="form-control" id="Weight">
+          <input [(ngModel)]="fish.Species" name="Species" type="text" class="form-control" id="Species">
+      </div>
+
+      <div class="input-group input-group-sm mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="SubSpecies">Sub-Species</label>
           </div>
-      
-          <div class="input-group input-group-sm mb-3">
-              <div class="input-group-prepend">
-                <label class="input-group-text" for="Bait">Bait</label>
-              </div>
-              <input [(ngModel)]="fish.Bait" name="Bait" type="text" class="form-control" id="Bait">
+          <input [(ngModel)]="fish.SubSpecies" name="SubSpecies" type="text" class="form-control" id="SubSpecies">
+      </div>
+  
+      <div class="input-group input-group-sm mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="Weight">Weight</label>
           </div>
+          <input [(ngModel)]="fish.Weight" name="Weight" type="text" class="form-control" id="Weight">
+      </div>
+  
+      <div class="input-group input-group-sm mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="BaitStyle">Bait Style</label>
+          </div>
+          <input [(ngModel)]="fish.BaitStyle" name="BaitStyle" type="text" class="form-control" id="BaitStyle">
+      </div>
+
+      <div class="input-group input-group-sm mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="BaitDesc">Bait Description</label>
+          </div>
+          <input [(ngModel)]="fish.BaitDesc" name="BaitDesc" type="text" class="form-control" id="BaitDesc">
+      </div>
       
           <div id="function">
-              <button (click)="change()" class="btn btn-primary">Edit Catch Details</button>
+              <button (click)="change()" class="btn btn-primary">Update Catch Details</button>
           </div>
       
       </div>
