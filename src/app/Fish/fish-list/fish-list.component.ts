@@ -3,6 +3,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Fish } from '../fish';
 import { FishService } from '../fish.service';
 import { FishDetailComponent } from '../fish-detail/fish-detail.component'
+import { element, elementAttribute } from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-fish-list',
@@ -16,7 +17,7 @@ export class FishListComponent implements OnInit {
 
   Removed: boolean = false;
   
-  Markforremoval(): void {
+  Markforremoval(fish): void {
     this.Removed = !this.Removed;
   }
 
@@ -37,11 +38,11 @@ export class FishListComponent implements OnInit {
     ) { }
 
   ngOnInit() {
-
     this.fishsvc.list().subscribe(resp => {
       this.fish = resp;
       console.log(this.fish);
     })
+
 
   }
 

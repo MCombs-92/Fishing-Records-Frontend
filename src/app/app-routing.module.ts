@@ -9,6 +9,7 @@ import { FishListComponent } from './fish/fish-list/fish-list.component';
 const routes: Routes = [
   {path: '', redirectTo: '/fish/list', pathMatch: 'full'},
   {path: 'fish/list', component: FishListComponent},
+  {path: 'fish/list/:id', component: FishListComponent},
 
   {path: 'fish/create', component: FishCreateComponent},
   {path: 'fish/edit/:id', component: FishEditComponent},

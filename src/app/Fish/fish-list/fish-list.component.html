@@ -27,10 +27,7 @@
         <td>
           <span class = "edit"><a routerLink="/fish/edit/{{f.Id}}">Edit Record</a></span>
           <span> | </span>
-          <span *ngIf="!Removed"class = "confirm"><a (click) = "Markforremoval()"> Remove Record</a></span>
-          <span *ngIf="Removed" class = "confirm"><a (click) = "Markforremoval()"> Cancel</a></span>
-          <span *ngIf="Removed"> | </span>
-          <span class = "confirm" *ngIf="Removed"><a routerLink = "/fish/detail/{{f.Id}}">Click to confirm</a></span>
+          <span class = "confirm"><a routerLink = "/fish/detail/{{f.Id}}"> Remove Record</a></span>
         </td>
       </tr>
     </table>
