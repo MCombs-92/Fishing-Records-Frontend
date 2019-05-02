@@ -1,3 +1,45 @@
-<p>
-  rod-create works!
-</p>
+<div id = "container">
+    <div id = "content">
+  
+      <div id = "head">
+        <h2>Rod data</h2>
+        <p>Enter your Equipment data here!</p>
+      </div>
+  
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class= "input-group-text" for="Make">Make</label>
+        </div>
+        <input [(ngModel)]="rod.Make" name="Make" type="text" class="form-control" id="Make" placeholder="What make is your rod?">
+      </div>
+  
+      <div class="input-group input-group-sm mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="Model">Model</label>
+          </div>
+          <input [(ngModel)]="rod.Model" name="Model" type="text" class="form-control" id="Model" placeholder="What Model is your rod?">
+      </div>
+  
+      <div class="input-group input-group-sm mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="Power">Power</label>
+          </div>
+          <input [(ngModel)]="rod.Power" name="Power" type="text" class="form-control" id="Power" placeholder="What is your rod's power?">
+      </div>
+  
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class= "input-group-text" for="Action">Action</label>
+        </div>
+        <input [(ngModel)]="rod.Action" name="Action" type="text" class="form-control" id="Action" placeholder="What Action is your rod?">
+      </div>
+  
+      <div id="function">
+          <button routerLink="/rods/list" class="btn btn-info">Previous</button>
+          <button (click)="create()" class="btn btn-primary">Record new rod</button>
+      </div>
+      
+    </div>
+  </div>
+  
+  

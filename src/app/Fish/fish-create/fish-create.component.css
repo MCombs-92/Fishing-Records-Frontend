@@ -3,6 +3,11 @@
     height: 100vh;
 }
 
+#container input::placeholder {
+    font-size: 12pt;
+    color: grey;
+}
+
 #head {
     text-align: center;
     margin-bottom: 3vh;
@@ -23,9 +28,10 @@
 #content label {
     background-color: black;
     color: white;
-    width: 6vw;
+    width: 7vw;
     height: 4.5vh;
     text-align: center;
+    font-size: 12pt;
 }
 #content input, #content select {
     height: 4.5vh;

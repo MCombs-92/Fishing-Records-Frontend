@@ -1,14 +1,15 @@
 li {
     display: inline-block;
     text-align: center;
+    padding: 10px 0;
 }
 a {
     color: white;
     text-decoration: none;
     font-size: 14pt;
-    padding: 0px 10px;
+    padding: 10px 15px;
 }
-a:hover {
+li:hover {
     background-color: black;
 }
 
