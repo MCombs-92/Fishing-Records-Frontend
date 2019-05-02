@@ -1,0 +1,17 @@
+li {
+    display: inline-block;
+    text-align: center;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 14pt;
+    padding: 0px 10px;
+}
+a:hover {
+    background-color: black;
+}
+
+.LinkActive {
+    color: cyan;
+} 
