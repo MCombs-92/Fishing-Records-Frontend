@@ -6,6 +6,7 @@ import { FishDetailComponent } from './fish/fish-detail/fish-detail.component';
 import { FishEditComponent } from './fish/fish-edit/fish-edit.component';
 import { FishListComponent } from './fish/fish-list/fish-list.component';
 import { RodListComponent } from './rod/rod-list/rod-list.component';
+import { RodEditComponent } from './rod/rod-edit/rod-edit.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/fish/list', pathMatch: 'full'},
@@ -18,6 +19,7 @@ const routes: Routes = [
 
 
   {path: 'rods/list', component: RodListComponent},
+  {path: 'rods/edit/:id', component: RodEditComponent},
 
   {path: '**', component: FishListComponent}
 ];

@@ -14,7 +14,7 @@
         <th>Species</th>
         <th>Weight</th>
         <th>Bait</th>
-        <th>Actions</th>
+        <th>Tools</th>
       </tr>
       <tr *ngFor="let f of fish">
         <td >{{ f.SubSpecies }}</td>
@@ -27,7 +27,7 @@
         <td>
           <span class = "edit"><a routerLink="/fish/edit/{{f.Id}}">Edit Record</a></span>
           <span> | </span>
-          <span class = "confirm"><a routerLink = "/fish/detail/{{f.Id}}"> Remove Record</a></span>
+          <span class = "confirm"><a routerLink = "/fish/detail/{{f.Id}}">Remove Record</a></span>
         </td>
       </tr>
     </table>

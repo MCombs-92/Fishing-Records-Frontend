@@ -1,0 +1,38 @@
+#container {
+    width: 100%;
+    height: 100vh;
+}
+
+#head {
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+#head h2 {
+    font-weight: bold;
+    font-size: 30pt;
+}
+
+#content {
+    width: 33%;
+    margin: auto;
+    padding-top: 10vh;
+    text-align: center;
+}
+
+#content label {
+    background-color: black;
+    color: white;
+    width: 6vw;
+}
+
+#function {
+    margin: auto;
+    text-align: center;
+}
+
+#function button {
+    width: 33%;
+    margin: 2vh 1vw 0vh 1vw;
+}
+

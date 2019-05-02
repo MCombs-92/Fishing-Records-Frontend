@@ -18,6 +18,7 @@ export class RodListComponent implements OnInit {
 
   rods:Rod[];
   removed: Boolean = false;
+  Header:string = "Rod Inventory"
 
   
 

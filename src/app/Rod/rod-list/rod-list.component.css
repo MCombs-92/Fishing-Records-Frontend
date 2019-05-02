@@ -1,0 +1,45 @@
+#Header {
+    text-align: center;
+    padding-top: 10vh;
+}
+
+#Header h2 {
+    font-size: 42pt;
+    font-weight: bold;
+}
+
+#create {
+    margin-left: 0.5vw;
+}
+
+#create a, #create a:hover, .edit a, .edit a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+.spacer {
+    padding-left: 0.5vh;
+}
+
+#data {
+    display: inline-block;
+    width: 100%;
+}
+
+#data th {
+    font-size: 14pt;
+    width: 10vw;
+    padding: 10px 0px 10px 0.5vw;
+}
+
+#data td{
+    width: 10vw;
+    padding: 10px 0px 10px 0.5vw;
+}
+
+.confirm a {
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+}
+

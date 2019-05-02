@@ -1,3 +1,44 @@
-<p>
-  rod-edit works!
-</p>
+<div id = "container">
+  <div id = "content">
+
+    <div id = "head">
+        <h1>Rod details</h1>
+        <p>Your Rod details can be adjusted here</p>
+    </div>
+    
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="Make">Make</label>
+        </div>
+        <input [(ngModel)]="rod.Make" name="Make" type="text" class="form-control" id="Make">
+    </div>
+
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="Model">Model</label>
+        </div>
+        <input [(ngModel)]="rod.Model" name="Model" type="text" class="form-control" id="Model">
+    </div>
+
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="Power">Power</label>
+        </div>
+        <input [(ngModel)]="rod.Power" name="Power" type="text" class="form-control" id="Power">
+    </div>
+
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="Action">Action</label>
+        </div>
+        <input [(ngModel)]="rod.Action" name="Action" type="text" class="form-control" id="Action">
+    </div>
+    
+    <div id="function">
+      <button routerLink="/rod/list" (click)="change()" class="btn btn-info">Previous</button>
+      <button (click)="change()" class="btn btn-success change">Update Rod Details</button>
+    </div>
+    
+    </div>
+</div>
+
