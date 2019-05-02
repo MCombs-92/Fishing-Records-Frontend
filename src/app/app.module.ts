@@ -10,6 +10,11 @@ import { FishCreateComponent } from './fish/fish-create/fish-create.component';
 import { FishDetailComponent } from './fish/fish-detail/fish-detail.component';
 import { FishEditComponent } from './fish/fish-edit/fish-edit.component';
 import { FishListComponent } from './fish/fish-list/fish-list.component';
+import { RodCreateComponent } from './rod/rod-create/rod-create.component';
+import { RodDetailComponent } from './rod/rod-detail/rod-detail.component';
+import { RodEditComponent } from './rod/rod-edit/rod-edit.component';
+import { RodListComponent } from './rod/rod-list/rod-list.component';
+import { RodRemoveComponent } from './rod/rod-remove/rod-remove.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +22,12 @@ import { FishListComponent } from './fish/fish-list/fish-list.component';
     FishCreateComponent,
     FishDetailComponent,
     FishEditComponent,
-    FishListComponent
+    FishListComponent,
+    RodCreateComponent,
+    RodDetailComponent,
+    RodEditComponent,
+    RodListComponent,
+    RodRemoveComponent
   ],
   imports: [
     BrowserModule,
