@@ -9,6 +9,7 @@ import { FishListComponent } from './fish/fish-list/fish-list.component';
 import { RodListComponent } from './rod/rod-list/rod-list.component';
 import { RodEditComponent } from './rod/rod-edit/rod-edit.component';
 import { RodCreateComponent } from './rod/rod-create/rod-create.component';
+import { RodRemoveComponent } from './rod/rod-remove/rod-remove.component';
 
 
 const routes: Routes = [
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'rods/list', component: RodListComponent},
   {path: 'rods/edit/:id', component: RodEditComponent},
   {path: 'rods/create', component: RodCreateComponent},
+  {path: 'rods/remove/:id', component: RodRemoveComponent},
 
   {path: '**', component: FishListComponent}
 ];
