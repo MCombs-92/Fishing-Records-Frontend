@@ -3,6 +3,10 @@
     height: 100vh;
 }
 
+#container input {
+    font-size: 12pt;
+}
+
 #container input::placeholder {
     font-size: 12pt;
     color: grey;

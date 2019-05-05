@@ -4,7 +4,9 @@
     "baseUrl": "src",
     "paths": {
       "@home/*":["app/home/*"],
-      "@fish/*":["app/fish/*"]
+      "@fish/*":["app/fish/*"],
+      "@rod/*":["app/rod/*"],
+      "@util/*":["app/utility/*"]
     },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,

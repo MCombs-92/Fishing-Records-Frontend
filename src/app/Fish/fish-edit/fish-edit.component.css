@@ -3,6 +3,15 @@
     height: 100vh;
 }
 
+#container input {
+    font-size: 12pt;
+}
+
+#container input::placeholder {
+    font-size: 12pt;
+    color: grey;
+}
+
 #head {
     text-align: center;
     margin-bottom: 3vh;
@@ -17,13 +26,19 @@
     width: 33%;
     margin: auto;
     padding-top: 10vh;
-    text-align: center;
+
 }
 
 #content label {
     background-color: black;
     color: white;
-    width: 6vw;
+    width: 7vw;
+    height: 4.5vh;
+    text-align: center;
+    font-size: 12pt;
+}
+#content input, #content select {
+    height: 4.5vh;
 }
 
 #function {
@@ -35,4 +50,3 @@
     width: 33%;
     margin: 2vh 1vw 0vh 1vw;
 }
-

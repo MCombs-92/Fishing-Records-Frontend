@@ -15,6 +15,24 @@ export class FishEditComponent implements OnInit {
 
   fish: Fish = new Fish;
 
+  species: string[] = [
+    "Catfish",
+    "Bass",
+    "Drum",
+    "Sunfish/Bream",
+    "Carp",
+    "Alligator Gar"
+
+  ];
+
+  baits: string[]= [
+    "Live",
+    "Cut",
+    "Lure",
+    "Synthetic",
+    "Other"
+  ]
+
   change(): void {
     this.fshsvc.change(this.fish).subscribe(resp=> {
       console.log(resp);
