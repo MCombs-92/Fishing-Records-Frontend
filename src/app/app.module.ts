@@ -6,18 +6,23 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { FishCreateComponent } from './fish/fish-create/fish-create.component';
 import { FishDetailComponent } from './fish/fish-detail/fish-detail.component';
 import { FishEditComponent } from './fish/fish-edit/fish-edit.component';
 import { FishListComponent } from './fish/fish-list/fish-list.component';
+
 import { RodCreateComponent } from './rod/rod-create/rod-create.component';
 import { RodDetailComponent } from './rod/rod-detail/rod-detail.component';
 import { RodEditComponent } from './rod/rod-edit/rod-edit.component';
 import { RodListComponent } from './rod/rod-list/rod-list.component';
 import { RodRemoveComponent } from './rod/rod-remove/rod-remove.component';
+
 import { NavComponent } from './nav/nav.component';
 import { NavItemComponent } from './nav/nav-item.component';
+
 import { RemovalToolComponent } from './utility/removal-tool/removal-tool.component';
+import { RodRemovalToolComponent } from './utility/rod-removal-tool/rod-removal-tool.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +38,8 @@ import { RemovalToolComponent } from './utility/removal-tool/removal-tool.compon
     RodRemoveComponent,
     NavComponent,
     NavItemComponent,
-    RemovalToolComponent
+    RemovalToolComponent,
+    RodRemovalToolComponent
   ],
   imports: [
     BrowserModule,

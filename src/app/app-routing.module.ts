@@ -11,7 +11,8 @@ import { RodEditComponent } from './rod/rod-edit/rod-edit.component';
 import { RodCreateComponent } from './rod/rod-create/rod-create.component';
 import { RodRemoveComponent } from './rod/rod-remove/rod-remove.component';
 
-import { RemovalToolComponent } from './utility/removal-tool/removal-tool.component'
+import { RemovalToolComponent } from './utility/removal-tool/removal-tool.component';
+import { RodRemovalToolComponent } from './utility/rod-removal-tool/rod-removal-tool.component';
 
 
 const routes: Routes = [
@@ -30,6 +31,7 @@ const routes: Routes = [
   {path: 'rods/remove/:id', component: RodRemoveComponent},
 
   {path: 'fish/mark/:id', component: RemovalToolComponent},
+  {path: 'rods/mark/:id', component: RodRemovalToolComponent},
 
   {path: '**', component: FishListComponent}
 ];

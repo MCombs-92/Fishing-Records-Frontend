@@ -23,9 +23,12 @@
         <td>{{ f.Power }}</td>
         <td>{{ f.Action }}</td>
         <td>
-          <span class = "edit"><a routerLink="/rods/edit/{{ f.Id }}">Edit Rod</a></span>
+          <span class = "edit"><a routerLink="/rods/edit/{{f.Id}}">Edit Record</a></span>
           <span> | </span>
-          <span class = "confirm"><a routerLink="/rods/remove/{{ f.Id }}"> Remove Rod</a></span>
+          <span *ngIf="!f.Markedforremoval" class = "confirm"><a routerLink = "/rods/mark/{{f.Id}}">Remove Rod</a></span>
+          <span *ngIf="f.Markedforremoval" class = "confirm"><a routerLink = "/rods/mark/{{f.Id}}">Cancel</a></span>
+          <span *ngIf="f.Markedforremoval"> | </span>
+          <span *ngIf="f.Markedforremoval" class = "confirm"><a routerLink = "/rods/remove/{{f.Id}}">Confirm</a></span>
         </td>
       </tr>
     </table>
