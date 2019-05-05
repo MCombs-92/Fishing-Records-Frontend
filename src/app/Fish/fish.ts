@@ -9,7 +9,6 @@ export class Fish {
 
     constructor() {
         this.Id = 0;
-        this.Markedforremoval = false;
     }
 
 }

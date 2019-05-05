@@ -17,6 +17,7 @@ import { RodListComponent } from './rod/rod-list/rod-list.component';
 import { RodRemoveComponent } from './rod/rod-remove/rod-remove.component';
 import { NavComponent } from './nav/nav.component';
 import { NavItemComponent } from './nav/nav-item.component';
+import { RemovalToolComponent } from './utility/removal-tool/removal-tool.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { NavItemComponent } from './nav/nav-item.component';
     RodListComponent,
     RodRemoveComponent,
     NavComponent,
-    NavItemComponent
+    NavItemComponent,
+    RemovalToolComponent
   ],
   imports: [
     BrowserModule,

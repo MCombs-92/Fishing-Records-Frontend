@@ -13,13 +13,9 @@ import { element, elementAttribute } from '@angular/core/src/render3';
 export class FishListComponent implements OnInit {
 
   fish: Fish[];
-  f: Fish;
+  f: Fish = new Fish;
 
   Removed: boolean = false;
-  
-  Markforremoval(fish): void {
-    this.Removed = !this.Removed;
-  }
 
   Header = "Fishing Records";
 
@@ -38,11 +34,27 @@ export class FishListComponent implements OnInit {
     ) { }
 
   ngOnInit() {
+
+    let id = this.route.snapshot.params.id;
+    this.fishsvc.get(id).subscribe( resp => {
+      this.f = resp;
+      if(this.f == null) {
+        console.log("No record returned")
+      }
+      else {
+        this.f.Markedforremoval = !this.f.Markedforremoval;
+        this.fishsvc.change(this.f).subscribe(resp => {
+          console.log(resp, this.f)
+        })
+        this.router.navigateByUrl("/fish/list")
+      }
+
+      
+    })
     this.fishsvc.list().subscribe(resp => {
       this.fish = resp;
       console.log(this.fish);
     })
-
 
   }
 

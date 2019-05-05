@@ -16,8 +16,8 @@
         <th>Bait</th>
         <th>Tools</th>
       </tr>
-      <tr *ngFor="let f of fish">
-        <td >{{ f.SubSpecies }}</td>
+      <tr  *ngFor="let f of fish">
+        <td id="{{ f.Id }}">{{ f.SubSpecies }}</td>
         <td>{{ f.Weight }}</td>
         <td>
           <span>{{f.BaitStyle}}</span>
@@ -27,7 +27,10 @@
         <td>
           <span class = "edit"><a routerLink="/fish/edit/{{f.Id}}">Edit Record</a></span>
           <span> | </span>
-          <span class = "confirm"><a routerLink = "/fish/detail/{{f.Id}}">Remove Record</a></span>
+          <span *ngIf="!f.Markedforremoval" class = "confirm"><a routerLink = "/fish/mark/{{f.Id}}">Remove Record</a></span>
+          <span *ngIf="f.Markedforremoval" class = "confirm"><a routerLink = "/fish/mark/{{f.Id}}">Cancel</a></span>
+          <span *ngIf="f.Markedforremoval"> | </span>
+          <span *ngIf="f.Markedforremoval" class = "confirm"><a routerLink = "/fish/detail/{{f.Id}}">Confirm</a></span>
         </td>
       </tr>
     </table>
